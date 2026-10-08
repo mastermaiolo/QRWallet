@@ -21,7 +21,7 @@
 > Direct access to your essential digital credentials (WhatsApp, Telegram, Instagram, Revolut, GitHub, IBAN, Phone Dialer, and Wi-Fi Access) rendered as optical-grade inverted AMOLED QR codes right from your wrist. Zero internet dependency. Zero phone companion daemon.
 
 <p align="center">
-  <img src="assets/readme/screen-preview.png" alt="QRWallet running on Xiaomi Smart Band" width="220">
+  <img src="assets/readme/qrwallet-live-demo.gif" alt="QRWallet running live on Xiaomi Smart Band 10" width="220">
 </p>
 
 ---

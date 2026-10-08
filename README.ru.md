@@ -21,7 +21,7 @@
 > Мгновенный доступ к важным контактам и реквизитам (WhatsApp, Telegram, Instagram, Revolut, GitHub, IBAN, Телефон и Wi-Fi) прямо с вашего запястья. Специальные инвертированные QR-коды для AMOLED-экранов: 100% автономная работа без интернета и без фоновых приложений на смартфоне.
 
 <p align="center">
-  <img src="assets/readme/screen-preview.png" alt="QRWallet на экране Xiaomi Smart Band" width="220">
+  <img src="assets/readme/qrwallet-live-demo.gif" alt="QRWallet вживую на Xiaomi Smart Band 10" width="220">
 </p>
 
 ---

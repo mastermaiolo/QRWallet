@@ -23,7 +23,7 @@
 > 💡 *Selecione a sua variante regional preferida:* [**🇵🇹 Português de Portugal (PT-PT)**](README.pt-pt.md) · [**🇧🇷 Português do Brasil (PT-BR)**](README.pt-br.md)
 
 <p align="center">
-  <img src="assets/readme/screen-preview.png" alt="QRWallet rodando na Xiaomi Smart Band" width="220">
+  <img src="assets/readme/qrwallet-live-demo.gif" alt="QRWallet rodando ao vivo na Xiaomi Smart Band 10" width="220">
 </p>
 
 ---

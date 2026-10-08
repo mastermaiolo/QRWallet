@@ -21,7 +21,7 @@
 > Acesso direto às tuas credenciais digitais essenciais (WhatsApp, Telegram, Instagram, Revolut, GitHub, IBAN, Marcador telefónico e Acesso Wi-Fi) renderizadas como códigos QR invertidos com calibração óptica para ecrãs AMOLED diretamente no teu pulso. Zero dependência de internet. Zero aplicação em segundo plano no telemóvel.
 
 <p align="center">
-  <img src="assets/readme/screen-preview.png" alt="QRWallet a correr na Xiaomi Smart Band" width="220">
+  <img src="assets/readme/qrwallet-live-demo.gif" alt="QRWallet a correr ao vivo na Xiaomi Smart Band 10" width="220">
 </p>
 
 ---

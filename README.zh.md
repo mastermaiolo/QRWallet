@@ -21,7 +21,7 @@
 > 抬腕立显你的核心数字凭证（微信/WhatsApp、Telegram、Instagram、Revolut、GitHub、银行 IBAN、直接电话拨号及 Wi-Fi 连接码），专为 AMOLED 屏幕优化的反色光学级二维码。零网络依赖，手机无需常驻后台伴侣程序。
 
 <p align="center">
-  <img src="assets/readme/screen-preview.png" alt="在小米手环上运行的 QRWallet" width="220">
+  <img src="assets/readme/qrwallet-live-demo.gif" alt="QRWallet 在小米手环 10 上实机运行效果" width="220">
 </p>
 
 ---
