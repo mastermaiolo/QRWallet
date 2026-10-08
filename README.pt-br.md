@@ -5,22 +5,20 @@
 </p>
 
 <p align="center">
-  <sub><strong>VELA QUICKAPP · AMOLED · MATRIZ ÓPTICA DE HARDWARE · HYPEROS · HÁPTICA</strong></sub>
+  <sub><strong>VELA QUICKAPP · AMOLED · MATRIZ ÓPTICA DE HARDWARE · HYPEROS · RESPOSTA HÁPTICA</strong></sub>
 </p>
 
 <p align="center">
   <a href="README.pt-pt.md">🇵🇹 Português (PT)</a>
-  · <a href="README.pt-br.md">🇧🇷 Português (BR)</a>
+  · 🇧🇷 <strong>Português (BR)</strong>
   · <a href="README.md">🇬🇧 English</a>
   · <a href="README.es.md">🇪🇸 Español</a>
   · <a href="README.zh.md">🇨🇳 简体中文</a>
   · <a href="README.ru.md">🇷🇺 Русский</a>
 </p>
 
-> **Carteira de QR Codes e atalhos rápidos para Xiaomi Smart Band 9 e Smart Band 10 (Xiaomi Vela / HyperOS).**  
-> Acesso direto às suas credenciais digitais essenciais (WhatsApp, Telegram, Instagram, Revolut, GitHub, IBAN, Telefone e Acesso Wi-Fi) renderizadas como códigos QR invertidos de nível óptico para telas AMOLED direto no seu pulso. Zero dependência de internet. Zero app em segundo plano no smartphone.  
->  
-> 💡 *Selecione a sua variante regional preferida:* [**🇵🇹 Português de Portugal (PT-PT)**](README.pt-pt.md) · [**🇧🇷 Português do Brasil (PT-BR)**](README.pt-br.md)
+> **Carteira autônoma de QR Codes e atalhos rápidos para Xiaomi Smart Band 9 e Smart Band 10 (Xiaomi Vela / HyperOS).**  
+> Acesso direto às suas credenciais digitais essenciais (WhatsApp, Telegram, Instagram, Revolut, GitHub, IBAN, Discador telefônico e Acesso Wi-Fi) renderizadas como QR codes invertidos de nível óptico para telas AMOLED direto no seu pulso. Zero dependência de internet. Zero app em segundo plano no celular.
 
 <p align="center">
   <img src="assets/readme/screen-preview.png" alt="QRWallet rodando na Xiaomi Smart Band" width="220">
@@ -40,7 +38,7 @@
 
 ### Destaques Arquiteturais
 
-- **100% Autônomo na Pulseira**: Executa nativamente no motor QuickApp do Xiaomi Vela no microcontrolador da pulseira. Nenhum aplicativo precisa ficar aberto no celular e não requer conexão de dados durante o uso.
+- **100% Autônomo na Pulseira**: Executa nativamente no motor QuickApp do Xiaomi Vela no microcontrolador da pulseira. Nenhum app precisa ficar aberto no celular e não requer conexão de dados durante o uso.
 - **Óptica Invertida para AMOLED**: QR codes convencionais com fundo branco causam reflexo e ofuscamento em telas vestíveis. O QRWallet utiliza fundo preto puro `#000000` com módulos brancos `#FFFFFF`, maximizando a autonomia da bateria OLED e acionando câmeras de celulares (Google Lens, iPhone, apps bancários) instantaneamente.
 - **Densidade Ergonômica Nativa**: Calibrado com `height: 160px` por cartão, exibindo com precisão exatamente 3 itens por tela no display de 490px/520px sem cortes desajeitados.
 - **Glifos Vetoriais Genuínos**: Ícones de alta fidelidade em 96×96 px combinados com a tipografia nativa `MiSans` (renderizada em 24px com peso normal, sem deformação de falso negrito).
@@ -63,7 +61,7 @@
 | **Dispositivos Alvo** | Xiaomi Smart Band 9 e 10 | Formato de cápsula OLED |
 | **Resolução Virtual** | `192 × 490` (`designWidth: 192`) | Elimina distorções de arredondamento em ponto flutuante |
 | **Ritmo da Lista** | `height: 160px` | 3 cartões visíveis por viewport (`490 / 160 ≈ 3.06`) |
-| **Geometria dos Ícones** | `96 × 96 px` RGBA PNG | Dimensão padrão nativa de ativos |
+| **Geometria dos Ícones** | `96 × 96 px` RGBA PNG | Dimensão padrão nativa de arquivos gráficos |
 | **Tipografia** | `MiSans`, `24px`, `font-weight: normal` | Fonte vetorial nativa do sistema; evita bordas pixeladas |
 | **Quadro do QR Code** | `184 × 184 px` (`margin: 1`) | Preenche a largura preservando a borda de respiro |
 | **Modelo de Cor** | Frente `#FFFFFF` / Fundo `#000000` | Matriz óptica de alto contraste para AMOLED |
@@ -111,7 +109,7 @@ Technical Constraints:
 ### 🎨 Diretrizes para Ícones e Atalhos Personalizados
 - **PNG Transparente / SVG Vetorial**: Utilize sempre ícones com **fundo 100% transparente (RGBA)** ou SVGs vetoriais na pasta `icon/`. Como o display da pulseira é AMOLED preto puro (`#000000`), imagens com caixas ou fundos sólidos (brancos ou cinzas) criam um recorte visual desagradável.
 - **Resolução Nativa 96 × 96 px**: Ícones de alta resolução (ex: 512×512) colocados em `src/common/icons/` serão redimensionados e normalizados automaticamente para 96×96 RGBA ao executar `python3 generate_assets.py`. Mantenha proporção 1:1 e o logo centralizado.
-- **Adicionar / Remover Atalhos**: Pode adicionar qualquer serviço (Discord, Spotify, Pix, Twitch) ou remover o que não precisa editando `APP_ITEMS` em `src/pages/index/index.ux` e `QR_ITEMS` em `generate_assets.py`.
+- **Adicionar / Remover Atalhos**: Você pode adicionar qualquer serviço (Discord, Spotify, Pix, Twitch) ou remover o que não precisa editando `APP_ITEMS` em `src/pages/index/index.ux` e `QR_ITEMS` em `generate_assets.py`.
 - **Formatos de URI**: Consulte o [`AI_CUSTOMIZATION_PROMPT.md`](./AI_CUSTOMIZATION_PROMPT.md) para obter o guia completo de formatos (`tel:+`, `https://wa.me/`, `WIFI:S:...;T:WPA;P:...;;`, etc.).
 
 ---
@@ -124,7 +122,7 @@ Para gerar localmente sem depender de interfaces de chat:
 # 1. Edite suas credenciais em generate_assets.py
 nano generate_assets.py
 
-# 2. Execute o gerador automático (gera QR codes + converte SVGs)
+# 2. Execute o gerador automático (gera QR codes + converte SVGs + normaliza ícones)
 python3 generate_assets.py
 
 # 3. Compile o pacote de produção
@@ -143,13 +141,13 @@ Depois de compilar o seu pacote `.rpk` personalizado (ou se quiser testar a vers
 ### Via Notify for Xiaomi (Recomendado)
 
 1. Pegue o seu arquivo compilado em `dist/com.custom.qrwallet.release.1.0.0.rpk` (ou baixe da aba Releases).
-2. Transfira o arquivo `.rpk` para o seu telemóvel.
-3. Abra o **Notify for Xiaomi** → Vá em **Definições / Dispositivo** → **Aplicativo de terceiros**.
+2. Transfira o arquivo `.rpk` para o seu celular.
+3. Abra o **Notify for Xiaomi** → Vá em **Configurações / Dispositivo** → **Aplicativo de terceiros**.
 4. Toque em **Carregar arquivo .rpk** e selecione o pacote.
-5. Aguarde o envio Bluetooth concluir.
+5. Aguarde o envio via Bluetooth concluir.
 
 > [!IMPORTANT]
-> **Regra de Invalidação de Cache**: Se você já tiver uma versão anterior instalada na pulseira, **desinstale-a primeiro** pelo Notify ou pelo menu de apps do relógio antes de enviar a nova versão. Isso força o Xiaomi Vela a limpar os ícones antigos da memória flash.
+> **Regra de Invalidação de Cache**: Se você já tiver uma versão anterior instalada na pulseira, **desinstale-a primeiro** pelo Notify ou pelo menu de apps da pulseira antes de enviar a nova versão. Isso força o Xiaomi Vela a limpar os ícones antigos da memória flash.
 
 ### Via Mi Fitness Modificado (Developer Menu)
 

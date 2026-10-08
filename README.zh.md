@@ -9,7 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="README.pt.md">🇵🇹 Português</a>
+  <a href="README.pt-pt.md">🇵🇹 PT-PT</a>
+  · <a href="README.pt-br.md">🇧🇷 PT-BR</a>
   · <a href="README.md">🇬🇧 English</a>
   · <a href="README.es.md">🇪🇸 Español</a>
   · 🇨🇳 <strong>简体中文</strong>
